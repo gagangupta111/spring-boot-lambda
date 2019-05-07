@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class LoggingExample {
 
-    public static Logger logger = Logger.getLogger(LoggingExample.class.getName());
+    public static Logger logger = LogUtil.getInstance();
 
     public void log() {
         try {
