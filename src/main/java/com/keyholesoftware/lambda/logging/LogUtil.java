@@ -24,7 +24,7 @@ public class LogUtil {
 		logger.addHandler(new MyHandler());
 		try {
 			//FileHandler file name with max size and number of log files limit
-			Handler fileHandler = new FileHandler("/Users/gagangupta/logger.log", 800000000, 1);
+			Handler fileHandler = new FileHandler("/Users/gagangupta/loggerLambda.log", 800000000, 1);
 			fileHandler.setFormatter(new MyFormatter());
 			//setting custom filter for FileHandler
 			fileHandler.setFilter(new MyFilter());
